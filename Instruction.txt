@@ -1,0 +1,8 @@
+If the library code is not available, we create a stub file add annotations to the method signatures.
+
+To create a stub file(for Integer.class)
+java -cp "C:\Program Files\checker-framework-2.3.2\checker-framework-2.3.2\checker\dist\checker.jar" org.checkerframework.framework.stub.StubGenerator java.lang.Integer>Integer.astub
+
+To use the stub file(Integer.astub)
+java -jar "C:\Program Files\checker-framework-2.3.2\checker-framework-2.3.2\checker\dist\checker.jar" -processor nullness -Astubs=Integer.astub IntegerNumbers.java
+
