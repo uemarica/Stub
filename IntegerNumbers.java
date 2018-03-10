@@ -3,7 +3,10 @@ import org.checkerframework.checker.nullness.qual.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+/*
+In the following class line number 15 gives a warning for the arguments of the parseInt(String) method of the Integer class as it might return a 
+nullable value, to resolve the warning i created a stub file Integer.astub in which i changed the annotation of the argument of the specified
+method to @Nullable. The instructions on to create and use a stub file is provided int the Instruction.txt file*/
 class IntegerNumbers {
     public static void main(String args[]) throws IOException{
 	//Accepting input from the keyboard using a BuffereReader class object
